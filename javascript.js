@@ -32,6 +32,14 @@ function confirmBooking() {
     bookingDate = document.getElementById("date").value
     bookingTime = document.getElementById("time").value
     bookingName = document.getElementById("fname").value
-    message = `Thanks ${bookingName}. Your booking is made for ${bookingDate} at ${bookingTime}`
-    alert(message)
+    console.log(bookingDate)
+    console.log(bookingTime)
+    console.log(bookingName)
+    if (bookingDate !== '' && bookingTime !== '' && bookingName !== '') {
+        message = `Thanks ${bookingName}. Your booking is made for ${bookingDate} at ${bookingTime}.`
+        alert(message)
+    }
+    // message = `Thanks ${bookingName}. Your booking is made for ${bookingDate} at ${bookingTime}`
+    // alert(message)
+
 }
